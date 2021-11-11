@@ -10,8 +10,91 @@
 
 <body>
   <script>
-    if (10 > 2) {
-      console.log('Yep');
+    // const age = 50;
+    // if (age > 70) {
+    //   console.log('in your seventies');
+    // } else if (age > 60) {
+    //   console.log('in your sixties');
+    // } else if (age > 50) {
+    //   console.log('in your 50s');
+    // } else {
+    //   console.log('Nothing was true');
+    // }
+
+    // function slugify(sentence, lowercase) {
+    //   if (lowercase) {
+    //     return sentence.replace(/\s/g, '-').toLowerCase();
+    //   }
+    //   return sentence.replace(/\s/g, '-');
+    // }
+
+    // const name = 'colin';
+    // const last = 'smith';
+
+    // if (name === 'colin' && last === 'smith') {
+    //   console.log('cool name');
+    // }
+
+    // const isAwesomeName = 'awesome'.includes(name);
+    // if (isAwesomeName) {
+    //   console.log('Super cool awesome name');
+    // }
+
+    // function nameIsAwesome(name) {
+    //   return 'awesome'.includes(name);
+    // }
+
+    // if (nameIsAwesome('colin')) {
+    //   console.log('cool name colin');
+    // }
+
+    // const dog = 'snickers';
+
+    // if (dog) {
+    //   console.log('you have a dog');
+    // } else {
+    //   console.log('you dont have a dog');
+    // }
+
+    const isCool = true;
+
+    if (!isCool) {
+      console.log('You are not cool');
+    }
+
+    const count = 0;
+    // let word;
+    // if (count === 1) {
+    //   word = 'item';
+    // } else {
+    //   word = 'items';
+    // }
+
+    const word = count === 1 ? 'item' : 'items';
+    const sentence = `You have ${count} ${word} in your cart`;
+    console.log(sentence);
+
+    function showAdminBar() {
+      console.log('Showing admin bar');
+    }
+    const isAdmin = true;
+    // eslint-disable-next-line no-unused-expressions
+    isAdmin ? showAdminBar() : null;
+
+    function check1() {
+      return true;
+    }
+    function check2() {
+      return true;
+    }
+    function check3() {
+      return true;
+    }
+
+    if (check1() && check2() && check3()) {
+      console.log('all checks passed');
+    } else {
+      console.log('Some checks failed');
     }
   </script>
 </body>
